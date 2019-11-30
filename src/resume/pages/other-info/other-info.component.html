@@ -1,0 +1,59 @@
+<cv-page-title [title]="'More Information'"></cv-page-title>
+<div class="more-content" *ngIf="data">
+    <cv-card [title]="'Awards'">
+        <ul class="year-ul">
+            <li *ngFor="let d of data.awards">
+                <i class="fas fa-circle"></i>
+                <strong class="year">{{d.year}}</strong>
+                <span class="title">{{d.title}}</span>
+            </li>
+        </ul>
+    </cv-card>
+    <cv-divider></cv-divider>
+    <cv-card [title]="'Languages'">
+        <div class="languages">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-3">Reading</div>
+                <div class="col-3">Writing</div>
+                <div class="col-3">Speaking</div>
+            </div>
+            <div class="row ">
+                <div class="col-3"><strong>English</strong></div>
+                <div class="col-3">
+                    <cv-stars [value]="5"></cv-stars>
+                </div>
+                <div class="col-3">
+                    <cv-stars [value]="5"></cv-stars>
+                </div>
+                <div class="col-3">
+                    <cv-stars [value]="4"></cv-stars>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3"><strong>Arabic</strong></div>
+                <div class="col-3">
+                    <cv-stars [value]="5"></cv-stars>
+                </div>
+                <div class="col-3">
+                    <cv-stars [value]="5"></cv-stars>
+                </div>
+                <div class="col-3">
+                    <cv-stars [value]="5"></cv-stars>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3"><strong>French</strong></div>
+                <div class="col-3">
+                    <cv-stars [value]="5"></cv-stars>
+                </div>
+                <div class="col-3">
+                    <cv-stars [value]="5"></cv-stars>
+                </div>
+                <div class="col-3">
+                    <cv-stars [value]="5"></cv-stars>
+                </div>
+            </div>
+        </div>
+    </cv-card>
+</div>

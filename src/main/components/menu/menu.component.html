@@ -1,0 +1,25 @@
+<nav class='menu'>
+    <input checked='checked' class='menu-toggler' id='menu-toggler' type='checkbox'>
+    <label for='menu-toggler'></label>
+    <ul>
+        <li class='menu-item'>
+            <a class='fas fa-id-badge' (click)="goToMore()" matTooltip="More information"></a> 
+        </li>
+        <li class='menu-item'>
+            <a class='far fa-address-card' (click)="goToAbout()" matTooltip="About Me"></a>
+        </li>
+        <li class='menu-item'>
+            <a class='far fa-building' (click)="goToExperience()" matTooltip="Experience"></a>
+        </li>
+        <li class='menu-item'>
+            <a class='fas fa-briefcase' (click)="goToProjects()" matTooltip="Projects"></a>
+        </li>
+        <li class='menu-item'>
+            <a class='fas fa-code' (click)="goToSkills()" matTooltip="Skills"></a>
+        </li>
+        <li class='menu-item'>
+            <a class='fas fa-university' (click)="goToEducation()" matTooltip="Education"></a>
+        </li>
+
+    </ul>
+</nav>

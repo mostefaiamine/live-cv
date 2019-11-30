@@ -1,0 +1,24 @@
+@import "style-defs";
+
+.layout {
+  margin-top: 25px;
+  margin-bottom: 85px;
+  
+
+  aside {
+    min-height: 680px;
+    border-color: $color-p3;
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px;
+    /*  position: relative;*/
+    position: fixed;
+    width: 256px;
+    .menu-container {
+      position: absolute;
+      bottom: 120px;
+      left: 0;
+      right: 0;
+    }
+  }
+}

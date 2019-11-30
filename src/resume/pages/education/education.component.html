@@ -1,0 +1,11 @@
+<cv-page-title [title]="'Education'"></cv-page-title>
+<cv-card [title]="'Education'">
+    <ul class="year-ul">
+        <li *ngFor="let d of data.diplomas">
+            <i class="fas fa-circle"></i>
+            <strong class="year">{{d.year}}</strong>
+            <img class="flag" src="/assets/images/flags/{{d.country}}.png" />
+            <span class="title">{{d.title}}</span> ({{d.institution}})
+        </li>
+    </ul>
+</cv-card>

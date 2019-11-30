@@ -1,0 +1,83 @@
+/* You can add global styles to this file, and also import other style files */
+@import "style-defs";
+
+body {
+  padding: 0;
+  margin: 0;
+  /*font-family: "Raleway", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;*/
+  height: 100%;
+  background-color: $color-p2;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+$group-color: $color-p1;
+
+.elements-container {
+  padding-right: 35px;
+  border-right: 1.5px solid $group-color;
+}
+
+.element-inner-container {
+  position: relative;
+  div.countries {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  img.logo {
+    display: block;
+    max-width: 92px;
+    max-height: 64px;
+    margin: 10px auto 0px auto;
+  }
+
+  p {
+    margin: 0 0 20px 0;
+  }
+}
+
+a.slides {
+  background-position: top !important;
+}
+
+ul.year-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0px 0px 0px 20px;
+  border-left: 2px solid $color-p1;
+
+  li {
+    line-height: 30px;
+    /* margin-left: -8px; */
+    font-size: 1rem;
+    margin-bottom: 8px;
+    padding-left: 12px;
+
+    i {
+      color: $color-p1;
+      display: inline-block;
+      margin-right: 15px;
+      margin-left: -21px;
+    }
+
+    img.flag {
+      display: inline-block;
+      max-height: 28px;
+      vertical-align: middle;
+      margin-left: 6px;
+     
+    }
+
+    span.title{
+      margin-left: 6px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import "style-defs";
+div.about {
+  font-size: 0.9rem;
+
+  p {
+    font-size: 1rem;
+  }
+
+  ul.contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem; 
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    span {
+      display: inline-block;
+      margin-left: 5px;
+    }
+
+    li.link {
+      span {
+        text-decoration: underline;
+      }
+
+      &:hover {
+        color: $color-p3;
+
+        a {
+          color: $color-p3;
+        }
+      }
+    }
+
+    a {
+      text-decoration: underline;
+      color: black;
+    }
+  }
+}

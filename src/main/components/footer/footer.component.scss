@@ -1,0 +1,12 @@
+@import "style-defs";
+
+footer{
+    text-align: center;
+    background-color: $color-p5;
+    padding: 8px;
+    position: fixed;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    font-size: 0.8rem;
+}

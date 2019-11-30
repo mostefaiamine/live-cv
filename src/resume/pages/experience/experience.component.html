@@ -1,0 +1,11 @@
+<cv-page-title [title]="'Experience'"></cv-page-title>
+<div class="elements-container">
+    <cv-year-group *ngFor="let y of getYears()" [year]="y">
+
+        <div *ngFor="let ex of getItems(y)">
+            <cv-experience-item [data]="ex"></cv-experience-item>
+            <cv-divider></cv-divider>
+
+        </div>
+    </cv-year-group>
+</div> 

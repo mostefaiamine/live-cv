@@ -1,0 +1,37 @@
+<cv-page-title [title]="'About Me'"></cv-page-title>
+<div class="about">
+    <cv-card [title]="'Personal Information and Contact'" *ngIf="data">
+        <div class="row">
+            <div class="col-6">
+                <p>
+                    {{data.personal.aboutMe}}
+                </p>
+            </div>
+            <div class="col-6">
+                <ul class="contact">
+                    <li><i class="far fa-user"></i><span>Mostefai Mohammed Amine</span></li>
+                    <li class="link"><i class="far fa-envelope"></i><span><a
+                                href="{{data.personal.mailAddress}}">{{data.personal.mailAddress}}</a></span>
+                    </li>
+                    <li class="link"><i class="fas fa-globe"></i><a
+                            href="{{data.personal.webSite}}"><span>{{data.personal.webSite}}</span></a>
+                    </li>
+                    <li class="link"><i class="fab fa-twitter"></i><a href="{{data.personal.twitter}}"
+                            target="_blank"><span>{{data.personal.twitter}}</span></a>
+                    </li>
+                    <li class="link"><i class="fab fa-linkedin"></i><a href="{{data.personal.linkedIn}}"
+                            target="_blank"><span>{{data.personal.linkedIn}}</span></a>
+                    </li>
+                    <li class="link"><i class="fab fa-slideshare"></i><a href="{{data.personal.slideShare}}"
+                            target="_blank"><span>{{data.personal.slideShare}}</span></a>
+                    </li>
+                    <li class="link"><i class="fab fa-file-pdf"></i><a href="{{data.personal.pdf}}"
+                            target="_blank"><span>My resume (PDF)</span></a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </cv-card>
+</div>

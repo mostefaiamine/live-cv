@@ -1,0 +1,11 @@
+@import "style-defs";
+
+.intro-button {
+  color: $color-p1;
+  text-decoration: none;
+  font-size: 1.5rem;
+
+  &:hover {
+    color: $color-p4;
+  }
+}

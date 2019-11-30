@@ -1,0 +1,7 @@
+<cv-page-title [title]="'Skills'"></cv-page-title>
+<div class="skills" *ngIf="data">
+    <div class="skill-element" *ngFor="let s of data.skills">
+        <cv-skill-item [data]="s"></cv-skill-item>
+        <cv-divider></cv-divider>
+    </div>
+</div>

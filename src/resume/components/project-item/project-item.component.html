@@ -1,0 +1,28 @@
+<div class="element-inner-container">
+    <cv-card [title]="data.title">
+        <div class="row">
+            <div class="col-2">
+                <a href="{{data.companyUrl}}" target="_blank">
+                    <img class="logo" src="/assets/images/logo/{{data.institutionKey}}.png"
+                        matTooltip="{{data.institution}}" />
+                </a>
+            </div>
+            <div class="col-10">
+                <p class="description">{{data.summary}}</p>
+                <div class="row">
+                    <div class="col-8">
+                        <cv-tags [tags]="data.tags"></cv-tags>
+                    </div>
+                    <div class="col-4 add-container">
+                        <a *ngIf="data.link" class="fas fa-external-link-square-alt ref-link" href="{{data.link}}" target="_blank" matTooltip="Project URL"></a>
+                        <a *ngIf="data.captures" class="fas fa-images ref-link" (click)="showCaptures(data.captures)" matTooltip="Project captures"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </cv-card>
+    <div class="countries">
+        <cv-countries [countries]=" [data.institutionCountry]">
+        </cv-countries>
+    </div>
+</div>

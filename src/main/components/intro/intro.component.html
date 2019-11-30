@@ -1,0 +1,26 @@
+<div class="intro" *ngIf="data">
+    <img src="assets/images/photo/mam.jpg" />
+    <h1>Mostefai Mohammed Amine</h1>
+    <h2>Senior Software and Solution Architect</h2>
+    <p>{{data.personal.aboutMeShort}}</p>
+    <ul class="intro-buttons">
+        <li>
+            <cv-intro-button [icon]="'far fa-envelope'" [url]="data.personal.mailAddress"></cv-intro-button>
+        </li>
+        <li>
+            <cv-intro-button [icon]="'fas fa-globe'" [url]="data.personal.webSite"></cv-intro-button> 
+        </li>
+        <li>
+            <cv-intro-button [icon]="'fab fa-twitter'" [url]="data.personal.twitter"></cv-intro-button>
+        </li>
+        <li>
+            <cv-intro-button [icon]="'fab fa-linkedin'" [url]="data.personal.linkedIn"></cv-intro-button>
+        </li>
+        <li>
+            <cv-intro-button [icon]="'fab fa-slideshare'" [url]="data.personal.slideShare"></cv-intro-button>
+        </li>
+        <li>
+            <cv-intro-button [icon]="'far fa-file-pdf'" [url]="data.personal.pdf"></cv-intro-button>
+        </li>
+    </ul>
+</div>

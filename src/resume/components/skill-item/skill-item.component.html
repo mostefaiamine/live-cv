@@ -1,0 +1,8 @@
+<cv-card [title]="data.category">
+    <div class="row">
+        <div class="col-3 skill-element" *ngFor="let s of data.content">
+            <img src="/assets/images/techno/{{s.key}}.png"  matTooltip="{{s.value}}"/>
+            <cv-stars [value]="s.level"></cv-stars>
+        </div>
+    </div>
+</cv-card>

@@ -1,0 +1,31 @@
+@import "style-defs";
+
+.tag--group .tag {
+  margin: 6px 2px;
+}
+
+$taglabel_bgcolor: $color-p5;
+$taglabel_fontcolor: darken($taglabel_bgcolor, 30%);
+$taglabel_font: 10px;
+
+.tag {
+  font-family: "Arial", sans-serif;
+  display: inline-block;
+  color: $taglabel_fontcolor;
+  background-color: $taglabel_bgcolor;
+  font-size: $taglabel_font;
+  padding: 0.26em 0.7em;
+  font-weight: 600;
+  border-radius: 0.8em 0.8em;
+  text-transform: uppercase;
+  margin-right: 4px; 
+  cursor: pointer;
+  // border: 0.6em solid darken($taglabel_bgcolor,4%);
+}
+
+.tag:hover {
+  box-shadow: 0 0 0.12em 0 rgba(25, 25, 25, 0.2);
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari */
+  transform: scale(1.1);
+}
